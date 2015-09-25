@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    <LinearLayout   
+        android:orientation="vertical"  
+        android:layout_width="fill_parent"  
+        android:layout_height="wrap_content"  
+        android:layout_weight="1"  
+        >  
+        <!--进度条样式默认为圆形进度条，水平进度条需要配置style属性，  
+        ?android:attr/progressBarStyleHorizontal -->  
+        <ProgressBar  
+            android:layout_width="fill_parent"   
+            android:layout_height="20dp"  
+            style="?android:attr/progressBarStyleHorizontal"  
+            />  
+        <TextView  
+            android:layout_width="wrap_content"   
+            android:layout_height="wrap_content"  
+            android:layout_gravity="center"  
+            android:text="0%"  
+            />  
+    </LinearLayout>  
+    <Button  
+        android:layout_width="40dp"  
+        android:layout_height="40dp"  
+        android:onClick="pause"  
+        android:text="||"  
+        />  
+
+</LinearLayout>
